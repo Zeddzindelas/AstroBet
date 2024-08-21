@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroBet Casino</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #f0f0f0;
+            line-height: 1.6;
+            padding-top: 60px; /* Espaço para o header fixo */
+        }
+        header {
+            background: #1a1a1a;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('logo.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            background-attachment: fixed;
+            min-height: 100vh; /* Ajuste para garantir que a imagem cubra toda a seção */
+        }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e65c00;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        #games {
+            background: #1a1a1a;
+        }
+        #games h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .game-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .game-gallery .game {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            flex: 1 1 200px;
+            max-width: 300px;
+        }
+        .game-gallery .game img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .game-gallery .game h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        #about, #contact {
+            background: #333;
+            text-align: center;
+            color: #fff;
+        }
+        #about h2, #contact h2 {
+            margin-bottom: 20px;
+        }
+        #contact a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #0d0d0d;
+            padding: 10px 20px;
+            text-align: center;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Bem-vindo ao AstroBet Casino!</h1>
+            <p>Explore um universo de diversão e grandes ganhos.</p>
+            <a href="#games" class="cta-button">Comece a Jogar</a>
+        </div>
+    </section>
+
+    <section id="games">
+        <h2>Jogos</h2>
+        <div class="game-gallery">
+            <div class="game">
+                <img src="slot.jpg" alt="Slot Game">
+                <h3>Slot Game</h3>
+            </div>
+            <div class="game">
+                <img src="poker.jpg" alt="Poker">
+                <h3>Poker</h3>
+            </div>
+            <div class="game">
+                <img src="roullete.jpg" alt="Roulette">
+                <h3>Roulette</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>O AstroBet Casino oferece uma experiência de jogo imersiva com uma ampla gama de jogos e bônus astronômicos. Nossa missão é proporcionar diversão e oportunidades de ganhar a cada giro.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo e-mail: <a href="mailto:support@astrobet.com">support@astrobet.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AstroBet Casino. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
